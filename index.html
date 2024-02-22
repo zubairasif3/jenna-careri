@@ -6,10 +6,12 @@
     <title>Portfolio</title>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
+    <!-- fontawesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
     
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
-<body>
+<body class="index-page">
     <div class="wrapper">
         <div class="header">
             <div class="navbar-content">
@@ -43,7 +45,7 @@
                 </nav>
             </div>
         </div>
-        <div class="main-content">
+        <div class="main-content desktop-show">
             <div class="index-content">
                 <div class="container">
                     <div class="float-text">
@@ -52,40 +54,45 @@
                             e
                             <div class="vector vector-blue"><a href="#" class="index-dk-hover" data-target="float-blue"><img src="assets/images/Blue.png" class=""></a></div>                
                         </span>                   
-                        <span class="text-img" data-id="float-blue"><a href="#"><img src="assets/images/index-1.png" alt=""></a></span>                   
+                        <span class="text-img" data-id="float-blue"><a href="#"><img src="assets/images/index-1-desktop.png" alt=""></a></span>                   
                         <span>n</span>                   
                         <span>n</span>                   
                         <span>
                             a
                             <div class="vector vector-purple"><a href="#" class="index-dk-hover" data-target="float-purple"><img src="assets/images/Purple.png" class=""></a></div>
                         </span>                   
-                        <span class="text-img" data-id="float-purple"><a href="#"><img src="assets/images/index-2.png" alt=""></a></span>                   
+                        <span class="text-img" data-id="float-purple"><a href="#"><img src="assets/images/index-2-desktop.png" alt=""></a></span>                   
                         <span class="nbsp">&nbsp;</span>  
                         <span>
                             C
                             <div class="vector vector-green"><a href="#" class="index-dk-hover" data-target="float-green"><img src="assets/images/Green.png" class=""></a></div>
                         </span>                   
-                        <span class="text-img" data-id="float-green"><a href="#"><img src="assets/images/index-3.png" alt=""></a></span>                   
+                        <span class="text-img" data-id="float-green"><a href="#"><img src="assets/images/index-3-desktop.png" alt=""></a></span>                   
                         <span>a</span>                   
                         <span>r</span>                   
                         <span>
                             e
                             <div class="vector vector-orange"><a href="#" class="index-dk-hover" data-target="float-orange"><img src="assets/images/Orange.png" class=""></a></div>
                         </span>                   
-                        <span class="text-img" data-id="float-orange"><a href="#"><img src="assets/images/index-4.png" alt=""></a></span>                   
+                        <span class="text-img" data-id="float-orange"><a href="#"><img src="assets/images/index-4-desktop.png" alt=""></a></span>                   
                         <span>r</span>                   
                         <span>
                             i
                             <div class="vector vector-pink"><a href="#" class="index-dk-hover" data-target="float-pink"><img src="assets/images/Pink.png" class=""></a></div>
                         </span>   
-                        <span class="text-img" data-id="float-pink"><a href="#"><img src="assets/images/index-5.png" alt=""></a></span>                   
+                        <span class="text-img" data-id="float-pink"><a href="#"><img src="assets/images/index-5-desktop.png" alt=""></a></span>                   
                     </div>
                 </div>
             </div>
         </div>
+        <div class="index-tablet-mobile-content tablet-show mobile-show">
+            <div class="container">
+                <div class="img"><img src="assets/images/index-content-tablet-mobile.png" class="w-100"></div>
+            </div>
+        </div>
         <div class="index-footer">
             <div class="container">
-                <div class="if-links">
+                <div class="if-links mobile-none">
                     <div class="if-link"><a href="tel:508-932-1681">508-932-1681</a></div>
                     <div class="if-link">.</div>
                     <div class="if-link"><a href="mailto:jlcareri@comcast.net">jlcareri@comcast.net</a></div>
@@ -94,28 +101,69 @@
                     <div class="if-link">.</div>
                     <div class="if-link"><a href="#">Resume (PDF)</a></div>
                 </div>
+                <div class="if-links mobile-show">
+                    <div class="if-link"><a href="tel:508-932-1681">508-932-1681</a></div>
+                    <div class="if-link">.</div>
+                    <div class="if-link"><a href="#">Resume (PDF)</a></div>
+                    <div class="if-link"><a href="mailto:jlcareri@comcast.net">jlcareri@comcast.net</a></div>
+                    <div class="if-link">.</div>
+                    <div class="if-link"><a href="https://www.linkedin.com/in/jennacareri/" target="_blank">LinkedIn</a></div>
+                </div>
             </div>
+        </div>
+        <div class="index-footer-top-section">
+            <div class="row w-100 mx-auto">
+                <div class="col-lg-6 col-md-6 col-sm-12 col-12 px-0">
+                    <div class="img tablet-show"><a href="ebay.html"><img src="assets/images/index-1-tablet.png" class="w-100"></a></div>
+                    <div class="img mobile-show"><a href="ebay.html"><img src="assets/images/index-1-mobile.png" class="w-100"></a></div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12 col-12 px-0">
+                    <div class="img tablet-show"><a href="mobile-app.html"><img src="assets/images/index-2-tablet.png" class="w-100"></a></div>
+                    <div class="img mobile-show"><a href="mobile-app.html"><img src="assets/images/index-2-mobile.png" class="w-100"></a></div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12 col-12 px-0">
+                    <div class="img tablet-show"><a href="urban.html"><img src="assets/images/index-3-tablet.png" class="w-100"></a></div>
+                    <div class="img mobile-show"><a href="urban.html"><img src="assets/images/index-3-mobile.png" class="w-100"></a></div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12 col-12 px-0">
+                    <div class="img tablet-show"><a href="snippets.html"><img src="assets/images/index-4-tablet.png" class="w-100"></a></div>
+                    <div class="img mobile-show"><a href="snippets.html"><img src="assets/images/index-4-mobile.png" class="w-100"></a></div>
+                </div>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-12 px-0">
+                    <div class="img tablet-show"><a href="about.html"><img src="assets/images/index-5-tablet.png" class="w-100"></a></div>
+                    <div class="img mobile-show"><a href="about.html"><img src="assets/images/index-5-mobile.png" class="w-100"></a></div>
+                </div>
+            </div>
+            
         </div>
         <div class="footer-section">
             <div class="footer-content">
                 <div class="container">
                     <div class="row w-100 mx-auto">
-                        <div class="col-lg-7 col-md-7 col-sm-12 col-12">
+                        <div class="col-lg-7 col-md-7 col-sm-12 col-12 mobile-none">
                             <div class="footer-links">
                                 <div class="footer-link"><a href="about.html">About</a></div>
-                                <div class="footer-link"><a href="ebay.html">eBay currency conversion experience</a></div>
+                                <div class="footer-link"><a href="ebay.html">eBay currency conversion</a></div>
                                 <div class="footer-link"><a href="mobile-app.html">Pocket Local mobile app</a></div>
-                                <div class="footer-link"><a href="urban.html">Crossroads Urban Center redesign</a></div>
+                                <div class="footer-link"><a href="urban.html">Crossroads <span class="desktop-show">Urban Center</span> redesign</a></div>
                                 <div class="footer-link"><a href="snippets.html">Extras and snippets</a></div>
                             </div>
                         </div>
                         <div class="col-lg-5 col-md-5 col-sm-12 col-12">
                             <div class="right-content-flex">
-                                <div class="top-content">
+                                <div class="top-content mobile-none">
                                     <div class="contact-info"><a href="tel:508-932-1681">508-932-1681</a></div>
                                     <div class="contact-info"><a href="mailto:jlcareri@comcast.net">jlcareri@comcast.net</a></div>
                                     <div class="contact-info"><a href="https://www.linkedin.com/in/jennacareri/" target="_blank">LinkedIn</a></div>
                                     <div class="contact-info"><a href="#">Resume (PDF)</a></div>
+                                </div>
+                                <div class="top-content mobile-show">
+                                    <div class="contact-info"><a href="tel:508-932-1681">508-932-1681</a></div>
+                                    <div class="contact-info">.</div>
+                                    <div class="contact-info"><a href="#">Resume (PDF)</a></div>
+                                    <div class="contact-info"><a href="mailto:jlcareri@comcast.net">jlcareri@comcast.net</a></div>
+                                    <div class="contact-info">.</div>
+                                    <div class="contact-info"><a href="https://www.linkedin.com/in/jennacareri/" target="_blank">LinkedIn</a></div>
                                 </div>
                                 <div class="bottom-content">
                                     <div>Salt Lake City, UT</div>

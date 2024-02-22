@@ -97,6 +97,10 @@ a,
     justify-content: center;
 }
 
+.index-footer-top-section a{
+    width: 100%;
+}
+
 .footer-section {
     position: relative;
     z-index: -10;
@@ -120,6 +124,9 @@ a,
     color: #F6FFEA;
     margin-bottom: 24px;
 }
+.footer-content .footer-link a .desktop-show {
+    display: inline-block;
+}
 .footer-content .right-content-flex a:hover, 
 .footer-content .footer-link a:hover {
     text-decoration: underline;
@@ -136,6 +143,7 @@ a,
     color: #F6FFEA;
     text-align: end;
 }
+.footer-content .right-content-flex .top-content,
 .footer-content .right-content-flex a {
     font-weight: 700;
     line-height: 21.76px;
@@ -415,6 +423,7 @@ a,
     padding-bottom: 0px;
 }
 .project-page .tabs-content .heading {
+    font-family: 'ArchivoBlack';
     font-size: 36px;
     font-weight: 700;
     line-height: 39.17px;
@@ -433,6 +442,7 @@ a,
     left: -35px;
 }
 .project-page .tabs-content .title {
+    font-family: 'ArchivoBlack';
     font-size: 24px;
     font-weight: 700;
     line-height: 26.11px;
@@ -452,6 +462,9 @@ a,
     font-family: 'ArchivoBlack';
     padding: 15px 25px;
 }
+.project-page .tabs-content .img {
+    margin-bottom: 30px;
+} 
 .project-page .tabs-content #final-designs .btn-main {
     padding: 20px 30px;
 }
@@ -485,6 +498,7 @@ a,
 }
 .ebay-body .tabs-content .btn-main,
 .ebay-body .footer-content .right-content-flex,
+.ebay-body .footer-content .right-content-flex .top-content,
 .ebay-body .footer-content .right-content-flex a,
 .ebay-body .footer-content .footer-link a {
     color: #002BFF;
@@ -516,6 +530,9 @@ a,
     letter-spacing: -1px;
     margin-bottom: 0px;
 }
+.ebay-body .tabs-content #final-designs .btn-main i {
+    margin-right: 8px;
+}
 
 /* mobile-app page style */
 
@@ -541,6 +558,7 @@ a,
 }
 .mobile-app-body .tabs-content .btn-main,
 .mobile-app-body .footer-content .right-content-flex,
+.mobile-app-body .footer-content .right-content-flex .top-content,
 .mobile-app-body .footer-content .right-content-flex a,
 .mobile-app-body .footer-content .footer-link a {
     color: #6A21AE;
@@ -570,6 +588,7 @@ a,
 }
 .snippets-body .tabs-content .btn-main,
 .snippets-body .footer-content .right-content-flex,
+.snippets-body .footer-content .right-content-flex .top-content,
 .snippets-body .footer-content .right-content-flex a,
 .snippets-body .footer-content .footer-link a {
     color: #C72B01;
@@ -602,9 +621,249 @@ a,
 }
 .urban-body .tabs-content .btn-main,
 .urban-body .footer-content .right-content-flex,
+.urban-body .footer-content .right-content-flex .top-content,
 .urban-body .footer-content .right-content-flex a,
 .urban-body .footer-content .footer-link a {
     color: #007A0C;
 }
 
+.tablet-show {
+    display: none;
+}
+.index-footer .if-links.mobile-show,
+.mobile-show {
+    display: none;
+}
+.desktop-show {
+    display: block;
+}
+.index-page .main-content.desktop-show {
+    display: flex;
+}
 
+
+
+@media screen and (min-width: 744px) and (max-width: 1280px) {
+    .container {
+        max-width: 720px;
+    }
+    .footer-content .footer-link a {
+        font-size: 25px;
+        line-height: 27.2px;
+    }
+    .footer-content .right-content-flex a {
+        font-size: 16px;
+        line-height: 17.41px;
+    }
+    .footer-content .right-content-flex .bottom-content {
+        font-size: 16px;
+        line-height: 21.55px;
+    }
+
+    .index-footer .if-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        max-width: 450px;
+        margin: auto;
+    }
+    .index-footer .if-links .if-link:nth-child(4) {
+        display: none;
+    }
+
+    .about-content {
+        max-width: 720px;
+        padding: 0px 12px;
+    }
+    .about-content .af-links .af-link,
+    .about-content .af-links .af-link a{
+        font-size: 22px;
+        line-height: 23.94px;
+    }
+
+    .boottom-menu .bm-flex {
+        gap: 50px;
+    }
+    .project-page .tabs-content .methodology-buttons .btn-main {
+        font-size: 18px;
+        line-height: 19.58px;
+    }
+    .ebay-body .tabs-content .excerpts-card {
+        max-width: 100%;
+    }
+    
+    .index-page .main-content.desktop-show,
+    .footer-content .footer-link a .desktop-show,
+    .desktop-show {
+        display: none;
+    }
+    .index-footer .if-links.mobile-show,
+    .mobile-show {
+        display: none;
+    }
+    .tablet-show {
+        display: block;
+    }
+}
+
+
+@media screen and (max-width: 744px){
+    body {
+        font-size: 16px;
+        line-height: 21.55px;
+    }
+    .dropdown-item,
+    .header .navbar-content .navbar-nav .nav-link {
+        font-size: 18px;
+        line-height: 24.25px;
+    }
+    .dropdown-toggle::after{
+        display: inline-block;
+        content: "\f078";
+        font-size: 15px;
+        font-weight: 900;
+        font-family: "Font Awesome 5 Free";
+        border: 0px;
+        vertical-align: 0;
+        margin: 0px;
+    }
+    .footer-section {
+        min-height: 185px;
+    }
+    .footer-section .footer-content {
+        padding: 20px 0px;
+    }
+    .footer-content .right-content-flex {
+        gap: 20px;
+    }
+    .footer-content .right-content-flex .top-content {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    .footer-content .right-content-flex .bottom-content {
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 18.86px;
+        text-align: center;
+    }
+
+    .index-footer .if-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+    
+    .about-content {
+        border: 0px;
+        max-width: 100%;
+        padding-left: 0px;
+    }
+    .about-content::before,
+    .about-content::after,
+    .about-content .img{
+        display: none;
+    }
+    .about-content .heading {
+        font-size: 30px;
+        line-height: 32.64px;
+    }
+    .about-content .title {
+        font-size: 20px;
+        line-height: 21.76px;
+    }
+    .about-content .text {
+        margin-bottom: 0px;
+    }
+    .about-content .mb-60 {
+        margin-bottom: 50px;
+    }
+    .about-content .af-links{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .about-content .af-links .af-link,
+    .about-content .af-links .af-link a {
+        font-size: 14px;
+        line-height: 15.23px;
+    }
+
+
+    .ebay-body .tabs-content .excerpts-card {
+       max-width: 100%;
+    }
+    .project-page .hero-section {
+        padding-top: 40px;
+    }
+    .project-page .hero-section .heading {
+        font-size: 50px;
+        line-height: 54.4px;
+    }
+    .project-page .hero-section .text {
+        font-size: 30px;
+        line-height: 32.64px;
+    }
+    .project-page .boottom-menu {
+        padding: 0px;
+        overflow-x: visible;
+    }
+    .project-page .boottom-menu .bm-flex {
+        gap: 31px;
+        padding: 20px;
+        width: 100%;
+        justify-content: flex-start;
+        overflow-x: auto;
+    }
+    .project-page .boottom-menu .bm-flex a {
+        font-size: 18px;
+        line-height: 24.25px;
+        white-space: nowrap;
+    }
+    .project-page .tabs-content {
+        border-left: 0px;
+        padding-left: 0px;
+    }
+    .project-page .tabs-content::after,
+    .project-page .tabs-content .heading::before {
+        display: none;
+    }
+    .project-page .tabs-content .heading{
+        font-size: 30px;
+        line-height: 32.64px;
+    }
+    .project-page .tabs-content .title{
+        font-size: 20px;
+        line-height: 21.76px;
+    }
+    .project-page .tabs-content .methodology-buttons {
+        justify-content: center;
+    }
+    .project-page .tabs-content .methodology-buttons .btn {
+        font-size: 14px;
+        line-height: 15.23px;
+    }
+    .project-page .tabs-content .btn-main {
+        font-size: 16px;
+        line-height: 17.41px;
+    }
+
+
+    .index-page .main-content.desktop-show,
+    .footer-content .footer-link a .desktop-show,
+    .desktop-show {
+        display: none;
+    }
+    .tablet-show {
+        display: none;
+    }
+    .mobile-show {
+        display: block;
+    }
+    .index-footer .if-links.mobile-show {
+        display: flex;
+    }
+    .index-footer .if-links.mobile-none,
+    .mobile-none {
+        display: none !important;
+    }
+}
